@@ -1,5 +1,8 @@
 # Installer PacketTracer de Cisco
 
+!!! warning
+    Cette partie n'est pas triviale, mais en lisant sur internet il est possible de trouver les bonnes informations.
+
 ## Prérequis
 
 Avoir un compte sur [NetAcad de Cisco](https://www.netacad.com).
