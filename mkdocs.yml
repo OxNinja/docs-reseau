@@ -1,0 +1,54 @@
+site_name: Docs réseau
+site_url: https://reseau.0xninja.fr
+theme:
+  name: material
+  language: fr
+  icon:
+    logo: fontawesome/solid/network-wired
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: indigo
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Passer au mode nuit
+
+    - media: "(prefers-color-scheme: dark)"
+      primary: indigo
+      accent: indigo
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Passer au mode jour
+
+markdown_extensions:
+  - toc:
+      permalink: '#'
+      toc_depth: 3
+      slugify: !!python/name:pymdownx.slugs.uslugify_encoded
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://0xninja.fr
+    - icon: fontawesome/brands/github
+      link: https://github.com/OxNinja
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/0x_Ninja
+
